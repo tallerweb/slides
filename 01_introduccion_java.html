@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Introducción a Java</title>
+
+    <meta charset='utf-8'>
+  	<!-- Customize TEMPLATE_PATH, default is to offline -->
+  	<script>
+      //var PERMANENT_URL_PREFIX = 'http://html5-slides-template.googlecode.com/git/';
+  		//var TEMPLATE_PATH=PERMANENT_URL_PREFIX + "template/";
+  	</script>
+    <!-- Default to using offline resources -->
+    <script src='slides.js'>&#160;</script>
+    <!-- Alternatively, load everything remotely, even slides.js -->
+    <!--script src='http://html5-slides-template.googlecode.com/git/slides.js'>&#160;</script-->
+  </head>
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular'>
+
+      <article>
+        <h1>
+          Introducción a Java
+        </h1>
+        <p>
+          González - Moreira - Videla
+          <br>
+          otoño/invierno de 2013
+        </p>
+      </article>
+
+      <article>
+        <h2>Un poco de historia</h2>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          Los comienzos
+        </h3>
+        <p>
+          <img src='images/sun.jpg'>
+        </p>
+        <div class='source white'>
+          Fuente: thehindu.com
+        </div>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          James Gosling
+        </h3>
+        <p>
+          <img src='images/gosling.jpg'>
+        </p>
+        <div class='source white'>
+          Fuente: getoutofthedark.blogspot.com
+        </div>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          El presente
+        </h3>
+        <p>
+          <img src='images/oracle.jpg'>
+        </p>
+        <div class='source white'>
+          Fuente: allthingsd.com
+        </div>
+      </article>
+      
+      <article>
+        <h3>
+          Influencias
+        </h3>
+        <ul>
+          <li>
+            C ++
+          </li>
+          <li>
+            Smalltalk
+          </li>
+          <li>
+            Eiffel
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>
+          Característica: imperativo
+        </h3>
+        <section>
+        <pre>
+
+public int factorial(int n) {
+  int resultado = 1;
+  for (int i = 2; i &lt;= n; i++){
+    resultado = resultado ∗ i;
+  }
+  return resultado;
+}
+        </pre>
+        </section>
+
+        <p>Se describe cómo ejecutar el algoritmo</p>
+      </article>
+
+      <article>
+        <h3>
+          Contrastación: funcional
+        </h3>
+        <section>
+          <pre>
+
+(defun factorial (n)
+  (if (&lt;= n 1) 1 (∗ n (factorial (− n 1))))
+)
+          </pre>
+        </section>
+
+        <p>Se describe la función como elemento principal</p>
+      </article>
+
+      <article>
+        <h3>
+          Contrastación: programación lógica
+        </h3>
+        <section>
+          <pre>
+
+fac(0, 1).
+fac(N, F) :− N > 0,
+             M is N − 1,
+             fac(M, Fm),
+             F is N ∗ Fm.
+          </pre>
+        </section>
+
+        <p>Se describen las relaciones y restricciones del problema</p>
+      </article>
+
+      <article>
+        <h3>
+          Característica: genérico (1.5+)
+        </h3>
+        <section>
+        <pre>
+
+List&lt;Auto&gt; listado = new LinkedList&lt;Auto&gt;();
+        </pre>
+        </section>
+
+        <p>Se pueden flexibilizar tipos de datos para los atributos de las clases</p>
+      </article>
+
+
+      <article>
+        <h3>Modelo de Máquina Virtual</h3>
+        <p>
+          <img class="centered" src='images/jvm.jpg' style="width: 100%; margin-top: 50px;">
+        </p>
+        <div class='source white'>
+          Fuente: smu.edu.sg
+        </div>
+      </article>
+
+      <article>
+        <h3>JVM</h3>
+        <p>La Java Virtual Machine es una máquina abstracta. Su especificación la provee el entorno de ejecución, donde el <b>bytecode</b> se puede ejecutar.</p>
+        <br/>
+        <h3>JRE</h3>
+        <p>Es un acrónimo de Java Runtime Environment. Se utiliza para proveer el entorno de ejecución. Es la implementación de la JVM, existe físicamente y contiene las bibliotecas y otros archivos que Java utiliza en tiempo de ejecución.</p>
+        <br/>
+        <h3>JDK</h3>
+        <p>Es el acrónimo de Java Development Kit, y se compone por la JRE y algunas herramientas de programación, como ser <b>javac</b>, <b>javadoc</b>, entre otras.</p>
+      </article>
+
+      <article class='fill'>
+        <h3>JEE: Java Enterprise Edition</h3>
+        <p>
+          <img src='images/java-tech.gif' style="width:100%;">
+        </p>
+        <div class='source white'>
+          Fuente: enterprise.sourceforge.net
+        </div>
+      </article>
+
+      <article>
+        <h3>Frameworks (Java puro)</h3>
+        <p>
+          <img class="centered" style="margin-top: 120px;" src='images/frameworks.png'>
+        </p>
+        <div class='source white'>
+          Fuente: learncomputer.com
+        </div>
+      </article>
+
+      <article>
+        <h3>Frameworks en general</h3>
+        <p>
+          <img class="centered" style="width: 800px; margin-top: 30px;" src='images/top_web.png'>
+        </p>
+        <div class='source white'>
+          Fuente: coderwall.com
+        </div>
+      </article>
+      
+      <article>
+        <h2>Fin</h2>
+      </article>
+
+    </section>
+
+  </body>
+</html>
